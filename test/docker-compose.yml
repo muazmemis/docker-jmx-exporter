@@ -2,11 +2,11 @@ version: '3.2'
 
 services:
   exporter:
-    image: sscaling/jmx-prometheus-exporter
+    image: muazmemis/jmx-exporter
     ports:
       - 5556
   query:
-    image: sscaling/jmx-prometheus-exporter
+    image: muazmemis/jmx-exporter
     entrypoint:
       - curl
     command:

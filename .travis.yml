@@ -6,7 +6,7 @@ services:
   - docker
 
 install:
-  - docker build -t sscaling/jmx-prometheus-exporter .
+  - docker build -t muazmemis/jmx-exporter .
 
 before_script:
   - docker-compose -f test/docker-compose.yml up -d exporter
